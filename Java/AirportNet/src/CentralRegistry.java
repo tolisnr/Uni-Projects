@@ -18,7 +18,7 @@ public class CentralRegistry {
         for(Airport airport : airports) {
             if(airport.getNumberOfConnections() > largestHub.getNumberOfConnections()) largestHub = airport;
         }
-
+        // This method is supposed to return the airport with the most connections
         return largestHub;
     }
 
@@ -28,7 +28,7 @@ public class CentralRegistry {
         for(Flight flight : flights) {
             if(flight.getDuration() > longestFlight.getDuration()) longestFlight = flight;
         }
-
+        // This method is supposed to return the longest flight between two airports
         return longestFlight;
     }
 }

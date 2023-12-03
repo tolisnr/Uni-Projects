@@ -8,9 +8,9 @@ public class Flight {
         this.airportB = airportB;
         this.duration = duration;
 
-        airportA.connectAirport(airportB);
-        airportB.connectAirport(airportA);
-        
+        airportA.connectAirport(airportB);   //airportA is connected to airportB and airportB is connected to airportA
+        /* airportB.connectAirport(airportA);  This line is not needed because the connection is bidirectional 
+         *                                     and the method connectAirport() already does that for us */
         airportA.addCompany(company);
         airportB.addCompany(company);
     }
