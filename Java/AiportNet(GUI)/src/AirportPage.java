@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
 
@@ -18,11 +19,8 @@ public class AirportPage extends JFrame{
         makeTextFields();
         makeList();
 
-        containerPanel.add(nameField);
-        containerPanel.add(codeField);
-        containerPanel.add(cityField);
-        containerPanel.add(countryField);
         containerPanel.add(list);
+        containerPanel.setBorder(BorderFactory.createLineBorder(Color.GRAY));
 
         makeDetails();
 
@@ -100,6 +98,11 @@ public class AirportPage extends JFrame{
         codeField.setEditable(false);
         cityField.setEditable(false);
         countryField.setEditable(false);
+
+        containerPanel.add(nameField);
+        containerPanel.add(codeField);
+        containerPanel.add(cityField);
+        containerPanel.add(countryField);
 
         // Until here, the code creates a JPanel and 4 JTextFields
         // The JTextFields are used to display the airport's name, code, city and country

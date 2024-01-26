@@ -72,15 +72,12 @@ public class CentralRegistry {
         String details = "INDIRECT FLIGHTS through..." + "\n";
 
         if(a.isInDirectlyConnectedTo(b)) {
-            for(int i = 1; i <= a.getCommonConnections(b).size(); i++) {
-                Airport airport = a.getCommonConnections(b).get(i-1);
-
-                details += "[" + i + "]" + airport.getCity() + ", " + airport.getCode() + " airport" + "\n";
-            }
+            Airport airport = a.getCommonConnections(b).get(0);
+            details += "[1]" + airport.getCity() + ", " + airport.getCode() + " airport" + "\n";
         }
         //This method is simplier, than the getDirectFlightsDetails. It checks if Airport a 
-        //is indirectly connected to Airport b, and if it is it takes the CommonConnections
-        //ArrayList and iterates through it, adding the details of the airports to the "details" String.
+        //is indirectly connected to Airport b, and if it is, it takes the first object from the 
+        //CommonConnections ArrayList, and adds the details of the airport to the "details" String.
 
         return details;
     }
