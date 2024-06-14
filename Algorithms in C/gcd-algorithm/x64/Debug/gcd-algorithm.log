@@ -1,0 +1,4 @@
+﻿  gcd-iterative.c
+C:\Users\sinio\OneDrive\Desktop\4ο εξάμηνο\Ανάλυση Αλγορίθμων\Διαλέξεις\Διάλεξη 1\gcd-algorithm\gcd-iterative.c(15): warning C4715: 'gcdi': not all control paths return a value
+gcd-recursive.obj : error LNK2005: main already defined in gcd-iterative.obj
+C:\Users\sinio\OneDrive\Desktop\4ο εξάμηνο\Ανάλυση Αλγορίθμων\Διαλέξεις\Διάλεξη 1\gcd-algorithm\x64\Debug\gcd-algorithm.exe : fatal error LNK1169: one or more multiply defined symbols found
