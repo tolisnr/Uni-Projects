@@ -346,5 +346,284 @@
 			<read>.</read>&#13;
 			<transout/>&#13;
 		</transition>&#13;
+		<!-- For B -->
+		<transition>
+			<from>21</from>
+			<to>0</to>
+			<read>s</read>
+			<transout>B</transout>
+		</transition>
+		<transition>
+			<from>21</from>
+			<to>0</to>
+			<read>S</read>
+			<transout>B </transout>
+		</transition>
+
+		<!-- For C -->
+		<transition>
+			<from>23</from>
+			<to>0</to>
+			<read>s</read>
+			<transout>C</transout>
+		</transition>
+		<transition>
+			<from>23</from>
+			<to>0</to>
+			<read>S</read>
+			<transout>C </transout>
+		</transition>
+
+		<!-- For D -->
+		<transition>
+			<from>11</from>
+			<to>0</to>
+			<read>s</read>
+			<transout>D</transout>
+		</transition>
+		<transition>
+		<from>11</from>
+		<to>0</to>
+		<read>S</read>
+		<transout>D </transout>
+		</transition>
+
+		<!-- For F -->
+		<transition>
+		<from>17</from>
+		<to>0</to>
+		<read>s</read>
+		<transout>F</transout>
+		</transition>
+		<transition>
+		<from>17</from>
+		<to>0</to>
+		<read>S</read>
+		<transout>F </transout>
+		</transition>
+
+		<!-- For G -->
+		<transition>
+		<from>13</from>
+		<to>0</to>
+		<read>s</read>
+		<transout>G</transout>
+		</transition>
+		<transition>
+		<from>13</from>
+		<to>0</to>
+		<read>S</read>
+		<transout>G </transout>
+		</transition>
+
+		<!-- For H -->
+		<transition>
+		<from>15</from>
+		<to>0</to>
+		<read>s</read>
+		<transout>H</transout>
+		</transition>
+		<transition>
+		<from>15</from>
+		<to>0</to>
+		<read>S</read>
+		<transout>H </transout>
+		</transition>
+
+		<!-- For J -->
+		<transition>
+		<from>20</from>
+		<to>0</to>
+		<read>s</read>
+		<transout>J</transout>
+		</transition>
+		<transition>
+		<from>20</from>
+		<to>0</to>
+		<read>S</read>
+		<transout>J </transout>
+		</transition>
+
+		<!-- For K -->
+		<transition>
+		<from>12</from>
+		<to>0</to>
+		<read>s</read>
+		<transout>K</transout>
+		</transition>
+		<transition>
+		<from>12</from>
+		<to>0</to>
+		<read>S</read>
+		<transout>K </transout>
+		</transition>
+
+		<!-- For L -->
+		<transition>
+		<from>18</from>
+		<to>0</to>
+		<read>s</read>
+		<transout>L</transout>
+		</transition>
+		<transition>
+		<from>18</from>
+		<to>0</to>
+		<read>S</read>
+		<transout>L </transout>
+		</transition>
+
+		<!-- For O -->
+		<transition>
+		<from>14</from>
+		<to>0</to>
+		<read>s</read>
+		<transout>O</transout>
+		</transition>
+		<transition>
+		<from>14</from>
+		<to>0</to>
+		<read>S</read>
+		<transout>O </transout>
+		</transition>
+
+		<!-- For P -->
+		<transition>
+		<from>19</from>
+		<to>0</to>
+		<read>s</read>
+		<transout>P</transout>
+		</transition>
+		<transition>
+		<from>19</from>
+		<to>0</to>
+		<read>S</read>
+		<transout>P </transout>
+		</transition>
+
+		<!-- For Q -->
+		<transition>
+		<from>26</from>
+		<to>0</to>
+		<read>s</read>
+		<transout>Q</transout>
+		</transition>
+		<transition>
+		<from>26</from>
+		<to>0</to>
+		<read>S</read>
+		<transout>Q </transout>
+		</transition>
+
+		<!-- For R -->
+		<transition>
+		<from>9</from>
+		<to>0</to>
+		<read>s</read>
+		<transout>R</transout>
+		</transition>
+		<transition>
+		<from>9</from>
+		<to>0</to>
+		<read>S</read>
+		<transout>R </transout>
+		</transition>
+
+		<!-- For S -->
+		<transition>
+		<from>7</from>
+		<to>0</to>
+		<read>s</read>
+		<transout>S</transout>
+		</transition>
+		<transition>
+		<from>7</from>
+		<to>0</to>
+		<read>S</read>
+		<transout>S </transout>
+		</transition>
+
+		<!-- For U -->
+		<transition>
+		<from>8</from>
+		<to>0</to>
+		<read>s</read>
+		<transout>U</transout>
+		</transition>
+		<transition>
+		<from>8</from>
+		<to>0</to>
+		<read>S</read>
+		<transout>U </transout>
+		</transition>
+
+		<!-- For V -->
+		<transition>
+		<from>16</from>
+		<to>0</to>
+		<read>s</read>
+		<transout>V</transout>
+		</transition>
+		<transition>
+		<from>16</from>
+		<to>0</to>
+		<read>S</read>
+		<transout>V </transout>
+		</transition>
+
+		<!-- For W -->
+		<transition>
+		<from>10</from>
+		<to>0</to>
+		<read>s</read>
+		<transout>W</transout>
+		</transition>
+		<transition>
+		<from>10</from>
+		<to>0</to>
+		<read>S</read>
+		<transout>W </transout>
+		</transition>
+
+		<!-- For X -->
+		<transition>
+		<from>22</from>
+		<to>0</to>
+		<read>s</read>
+		<transout>X</transout>
+		</transition>
+		<transition>
+		<from>22</from>
+		<to>0</to>
+		<read>S</read>
+		<transout>X </transout>
+		</transition>
+
+		<!-- For Y -->
+		<transition>
+		<from>24</from>
+		<to>0</to>
+		<read>s</read>
+		<transout>Y</transout>
+		</transition>
+		<transition>
+		<from>24</from>
+		<to>0</to>
+		<read>S</read>
+		<transout>Y </transout>
+		</transition>
+
+		<!-- For Z -->
+		<transition>
+		<from>25</from>
+		<to>0</to>
+		<read>s</read>
+		<transout>Z</transout>
+		</transition>
+		<transition>
+		<from>25</from>
+		<to>0</to>
+		<read>S</read>
+		<transout>Z </transout>
+</transition>
 	</automaton>&#13;
 </structure>
