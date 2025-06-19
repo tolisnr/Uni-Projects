@@ -401,7 +401,7 @@
 		<state id="79" name="q_space">&#13;
 			<x>800.0</x>&#13;
 			<y>55.0</y>&#13;
-			<output> <output/>&#13;
+			<output/>&#13;
 		</state>&#13;
 		<!--The list of transitions.-->&#13;
 		<transition>&#13;
