@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<structure>
+    <type>moore</type>
+    <automaton>
+        <!-- States for each node in the Morse tree -->
+        <state id="0" name="q0"><x>754.0</x><y>56.0</y><initial/><output/></state>
+        <state id="1" name="E"><x>370.0</x><y>133.0</y><output>E</output></state>
+        <state id="2" name="T"><x>1191.0</x><y>149.0</y><output>T</output></state>
+        <state id="3" name="I"><x>212.0</x><y>240.0</y><output>I</output></state>
+        <state id="4" name="A"><x>488.0</x><y>242.0</y><output>A</output></state>
+        <state id="104" name="A_s1"><x>500.0</x><y>270.0</y><output>s</output></state>
+        <state id="204" name="A_s2"><x>510.0</x><y>290.0</y><output>s</output></state>
+        <state id="304" name="A_S"><x>520.0</x><y>310.0</y><output>S</output></state>
+        <state id="5" name="N"><x>1034.0</x><y>256.0</y><output>N</output></state>
+        <state id="6" name="M"><x>1299.0</x><y>256.0</y><output>M</output></state>
+        <state id="7" name="S"><x>124.0</x><y>363.0</y><output>S</output></state>
+        <state id="8" name="U"><x>246.0</x><y>364.0</y><output>U</output></state>
+        <state id="9" name="R"><x>418.0</x><y>365.0</y><output>R</output></state>
+        <state id="10" name="W"><x>547.0</x><y>367.0</y><output>W</output></state>
+        <state id="11" name="D"><x>965.0</x><y>377.0</y><output>D</output></state>
+        <state id="12" name="K"><x>1083.0</x><y>371.0</y><output>K</output></state>
+        <state id="13" name="G"><x>1260.0</x><y>387.0</y><output>G</output></state>
+        <state id="14" name="O"><x>1363.0</x><y>386.0</y><output>O</output></state>
+        <state id="15" name="H"><x>53.0</x><y>455.0</y><output>H</output></state>
+        <state id="16" name="V"><x>133.0</x><y>456.0</y><output>V</output></state>
+        <state id="17" name="F"><x>221.0</x><y>456.0</y><output>F</output></state>
+        <state id="18" name="L"><x>366.0</x><y>458.0</y><output>L</output></state>
+        <state id="19" name="P"><x>515.0</x><y>461.0</y><output>P</output></state>
+        <state id="20" name="J"><x>601.0</x><y>464.0</y><output>J</output></state>
+        <state id="21" name="B"><x>897.0</x><y>470.0</y><output>B</output></state>
+        <state id="121" name="B_s1"><x>910.0</x><y>490.0</y><output>s</output></state>
+        <state id="221" name="B_s2"><x>920.0</x><y>510.0</y><output>s</output></state>
+        <state id="321" name="B_S"><x>930.0</x><y>530.0</y><output>S</output></state>
+        <state id="22" name="X"><x>989.0</x><y>471.0</y><output>X</output></state>
+        <state id="23" name="C"><x>1071.0</x><y>473.0</y><output>C</output></state>
+        <state id="123" name="C_s1"><x>1080.0</x><y>490.0</y><output>s</output></state>
+        <state id="223" name="C_s2"><x>1090.0</x><y>510.0</y><output>s</output></state>
+        <state id="323" name="C_S"><x>1100.0</x><y>530.0</y><output>S</output></state>
+        <state id="24" name="Y"><x>1144.0</x><y>474.0</y><output>Y</output></state>
+        <state id="25" name="Z"><x>1225.0</x><y>475.0</y><output>Z</output></state>
+        <state id="26" name="Q"><x>1311.0</x><y>479.0</y><output>Q</output></state>
+        <!-- Transitions: Morse tree, letter space, word space -->
+        <transition><from>0</from><to>1</to><read>.</read></transition>
+        <transition><from>0</from><to>2</to><read>-</read></transition>
+        <transition><from>1</from><to>3</to><read>.</read></transition>
+        <transition><from>1</from><to>4</to><read>-</read></transition>
+        <transition><from>2</from><to>5</to><read>.</read></transition>
+        <transition><from>2</from><to>6</to><read>-</read></transition>
+        <transition><from>3</from><to>7</to><read>.</read></transition>
+        <transition><from>3</from><to>8</to><read>-</read></transition>
+        <transition><from>4</from><to>9</to><read>.</read></transition>
+        <transition><from>4</from><to>10</to><read>-</read></transition>
+        <transition><from>5</from><to>11</to><read>.</read></transition>
+        <transition><from>5</from><to>12</to><read>-</read></transition>
+        <transition><from>6</from><to>13</to><read>.</read></transition>
+        <transition><from>6</from><to>14</to><read>-</read></transition>
+        <transition><from>7</from><to>15</to><read>.</read></transition>
+        <transition><from>7</from><to>16</to><read>-</read></transition>
+        <transition><from>8</from><to>17</to><read>.</read></transition>
+        <!-- U does not have a right child in the standard tree, so no transition for '-' from 8 -->
+        <transition><from>9</from><to>18</to><read>.</read></transition>
+        <!-- R does not have a right child, so no '-' from 9 -->
+        <transition><from>10</from><to>19</to><read>.</read></transition>
+        <transition><from>10</from><to>20</to><read>-</read></transition>
+        <transition><from>11</from><to>21</to><read>.</read></transition>
+        <transition><from>11</from><to>22</to><read>-</read></transition>
+        <transition><from>12</from><to>23</to><read>.</read></transition>
+        <transition><from>12</from><to>24</to><read>-</read></transition>
+        <transition><from>13</from><to>25</to><read>.</read></transition>
+        <transition><from>13</from><to>26</to><read>-</read></transition>
+        <!-- O has no children -->
+        <!-- Leaf transitions for letter space (/) and word space (|) -->
+        <transition><from>1</from><to>104</to><read>/</read></transition>
+        <transition><from>1</from><to>304</to><read>|</read></transition>
+        <transition><from>2</from><to>104</to><read>/</read></transition>
+        <transition><from>2</from><to>304</to><read>|</read></transition>
+        <transition><from>3</from><to>104</to><read>/</read></transition>
+        <transition><from>3</from><to>304</to><read>|</read></transition>
+        <transition><from>4</from><to>104</to><read>/</read></transition>
+        <transition><from>4</from><to>304</to><read>|</read></transition>
+        <transition><from>5</from><to>104</to><read>/</read></transition>
+        <transition><from>5</from><to>304</to><read>|</read></transition>
+        <transition><from>6</from><to>104</to><read>/</read></transition>
+        <transition><from>6</from><to>304</to><read>|</read></transition>
+        <transition><from>7</from><to>104</to><read>/</read></transition>
+        <transition><from>7</from><to>304</to><read>|</read></transition>
+        <transition><from>8</from><to>104</to><read>/</read></transition>
+        <transition><from>8</from><to>304</to><read>|</read></transition>
+        <transition><from>9</from><to>104</to><read>/</read></transition>
+        <transition><from>9</from><to>304</to><read>|</read></transition>
+        <transition><from>10</from><to>104</to><read>/</read></transition>
+        <transition><from>10</from><to>304</to><read>|</read></transition>
+        <transition><from>11</from><to>104</to><read>/</read></transition>
+        <transition><from>11</from><to>304</to><read>|</read></transition>
+        <transition><from>12</from><to>104</to><read>/</read></transition>
+        <transition><from>12</from><to>304</to><read>|</read></transition>
+        <transition><from>13</from><to>104</to><read>/</read></transition>
+        <transition><from>13</from><to>304</to><read>|</read></transition>
+        <transition><from>14</from><to>104</to><read>/</read></transition>
+        <transition><from>14</from><to>304</to><read>|</read></transition>
+        <transition><from>15</from><to>104</to><read>/</read></transition>
+        <transition><from>15</from><to>304</to><read>|</read></transition>
+        <transition><from>16</from><to>104</to><read>/</read></transition>
+        <transition><from>16</from><to>304</to><read>|</read></transition>
+        <transition><from>17</from><to>104</to><read>/</read></transition>
+        <transition><from>17</from><to>304</to><read>|</read></transition>
+        <transition><from>18</from><to>104</to><read>/</read></transition>
+        <transition><from>18</from><to>304</to><read>|</read></transition>
+        <transition><from>19</from><to>104</to><read>/</read></transition>
+        <transition><from>19</from><to>304</to><read>|</read></transition>
+        <transition><from>20</from><to>104</to><read>/</read></transition>
+        <transition><from>20</from><to>304</to><read>|</read></transition>
+        <transition><from>21</from><to>121</to><read>/</read></transition>
+        <transition><from>121</from><to>221</to><read>/</read></transition>
+        <transition><from>221</from><to>0</to><read>/</read></transition>
+        <transition><from>21</from><to>321</to><read>|</read></transition>
+        <transition><from>321</from><to>0</to><read>.</read></transition>
+        <transition><from>321</from><to>0</to><read>-</read></transition>
+        <transition><from>321</from><to>0</to><read>/</read></transition>
+        <transition><from>321</from><to>0</to><read>|</read></transition>
+        <transition><from>23</from><to>123</to><read>/</read></transition>
+        <transition><from>123</from><to>223</to><read>/</read></transition>
+        <transition><from>223</from><to>0</to><read>/</read></transition>
+        <transition><from>23</from><to>323</to><read>|</read></transition>
+        <transition><from>323</from><to>0</to><read>.</read></transition>
+        <transition><from>323</from><to>0</to><read>-</read></transition>
+        <transition><from>323</from><to>0</to><read>/</read></transition>
+        <transition><from>323</from><to>0</to><read>|</read></transition>
+        <!-- After a space, return to q0 on next input -->
+        <transition><from>104</from><to>0</to><read>.</read></transition>
+        <transition><from>104</from><to>0</to><read>-</read></transition>
+        <transition><from>104</from><to>0</to><read>/</read></transition>
+        <transition><from>104</from><to>0</to><read>|</read></transition>
+        <transition><from>304</from><to>0</to><read>.</read></transition>
+        <transition><from>304</from><to>0</to><read>-</read></transition>
+        <transition><from>304</from><to>0</to><read>/</read></transition>
+        <transition><from>304</from><to>0</to><read>|</read></transition>
+        <transition><from>121</from><to>0</to><read>.</read></transition>
+        <transition><from>121</from><to>0</to><read>-</read></transition>
+        <transition><from>121</from><to>0</to><read>/</read></transition>
+        <transition><from>121</from><to>0</to><read>|</read></transition>
+        <transition><from>221</from><to>0</to><read>.</read></transition>
+        <transition><from>221</from><to>0</to><read>-</read></transition>
+        <transition><from>221</from><to>0</to><read>/</read></transition>
+        <transition><from>221</from><to>0</to><read>|</read></transition>
+        <transition><from>123</from><to>0</to><read>.</read></transition>
+        <transition><from>123</from><to>0</to><read>-</read></transition>
+        <transition><from>123</from><to>0</to><read>/</read></transition>
+        <transition><from>123</from><to>0</to><read>|</read></transition>
+        <transition><from>223</from><to>0</to><read>.</read></transition>
+        <transition><from>223</from><to>0</to><read>-</read></transition>
+        <transition><from>223</from><to>0</to><read>/</read></transition>
+        <transition><from>223</from><to>0</to><read>|</read></transition>
+    </automaton>
+</structure>
