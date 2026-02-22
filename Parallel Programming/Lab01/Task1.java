@@ -3,11 +3,14 @@
  * Αν δεν χρησιμοποιήσουμε δομή δεδομένων για τα νήματα τότε δεν θα είναι δυνατό να κρατήσουμε αναφορά σε αυτά κάθε φορά
  * που δημιουργείται ένα νέο νήμα. Συνεπώς η κλήση της μεθόδου join() δεν θα είναι δυνατή. Έτσι το νήμα της main
  * θα τερματίσει πριν τα υπόλοιπα νήματα.
+ *
+ * Επίσης, δεν μπορούμε να δημιουργήσουμε (για παράδειγμα) 20 νήματα, χωρίς δομή δεδομένων (τύπου πίνακα ή λίστας)
+ * καθώς θα έπρεπε να δηλώσουμε 20 μεταβλητές τύπου Thread, κάτι που δεν είναι πρακτικό.
 */
 
 
 /*
- * HelloThread.java
+ * Task1.java
  *
  * creates threads using a class extending Thread. 
  * 
@@ -17,12 +20,11 @@ public class HelloThread {
     public static void main(String[] args) {
 
         int numThreads = 20;
-        Thread thread; // Δηλώνεται αρχική μεταβλητή thread
+        Thread thread = new MyThread(); // Δηλώνεται αρχική μεταβλητή thread
 
         /* create and start threads */
         for (int i = 0; i < numThreads; ++i) {
             System.out.println("In main: create and start thread " + i);
-            thread = new MyThread(); // Δημιουργείται νέο νήμα
             thread.start(); // Ξεκινάει το νήμα
         }
 

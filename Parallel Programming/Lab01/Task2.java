@@ -58,7 +58,7 @@ class TypeB extends PolymorphicThread {
         super(myID);
         total = totalThreads;
     }
-    // Έχω διαφορετικό constructor από την κλάση TypeA!
+    // Έχει διαφορετικό constructor από την κλάση TypeA!
 
     /* thread code */
     @Override

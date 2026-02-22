@@ -11,7 +11,7 @@
 
 public class Task4 {
     public static void main(String[] args) {
-        /* allocate array of thread objecst */
+        /* allocate array of thread object */
         int numThreads = 10;
         Thread[] threads = new Thread[numThreads];
 
