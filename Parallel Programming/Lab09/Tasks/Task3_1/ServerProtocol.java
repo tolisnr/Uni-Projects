@@ -18,7 +18,7 @@ public class ServerProtocol {
 	public String processRequest(String theInput) {
 		System.out.println("Received message from client: " + theInput);
 
-		// Check for CLOSE command first to avoid parsing errors
+		// CHECK FOR CLOSE COMMAND FIRST
 		if(theInput.equals("CLOSE")) {
 			return "CLOSE";
 		}
@@ -32,15 +32,15 @@ public class ServerProtocol {
 		String[] parts = input.split(",");
 		String message = parts[1].trim();
 		int option = 0;
-        int offset = 0; // For Caesar's Cipher options
+		int offset = 0; // For Caesar's Cipher options
 
-        try {
+		try {
 			option = Integer.parseInt(parts[0]);
 			if(option == 4 || option == 5) offset = Integer.parseInt(parts[2].trim());
-        } catch (NumberFormatException e) {
-            throw new RuntimeException(e);
-        }
-        String result = "";
+		} catch (NumberFormatException e) {
+			throw new RuntimeException(e);
+		}
+		String result = "";
 
 		switch (option) {
 			case 1:

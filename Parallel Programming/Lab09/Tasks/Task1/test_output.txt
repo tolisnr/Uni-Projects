@@ -1,0 +1,31 @@
+﻿=== Iterative Echo Server Test ===
+Connection to localhost:1234 established
+
+[TEST] Sending: 1, Hello World
+[RESPONSE] Hello World
+
+[TEST] Sending: 2, HELLO WORLD
+[RESPONSE] hello world
+
+[TEST] Sending: 3, hello world
+[RESPONSE] HELLO WORLD
+
+[TEST] Sending: 4, hello,3
+[RESPONSE] khoor
+
+[TEST] Sending: 5, khoor,3
+[RESPONSE] hello
+
+[TEST] Sending: 2, PROGRAMMING IS FUN
+[RESPONSE] programming is fun
+
+[TEST] Sending: 3, test message
+[RESPONSE] TEST MESSAGE
+
+[TEST] Sending: 4, SECRET,5
+[RESPONSE] XJHWJY
+
+[TEST] Sending: CLOSE
+[RESPONSE] CLOSE
+
+[INFO] Connection closed

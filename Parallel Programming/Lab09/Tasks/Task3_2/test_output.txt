@@ -1,0 +1,32 @@
+﻿=== === =   Calculator Test Client   === ===
+Connection to localhost:1234 established
+[TEST]   Sending: 5 + 3
+[RESPONSE]   8.0
+
+[TEST]   Sending: 10 - 4
+[RESPONSE]   6.0
+
+[TEST]   Sending: 6 * 7
+[RESPONSE]   42.0
+
+[TEST]   Sending: 20 / 4
+[RESPONSE]   5.0
+
+[TEST]   Sending: 100 + 50
+[RESPONSE]   150.0
+
+[TEST]   Sending: 3.5 + 2.5
+[RESPONSE]   6.0
+
+[TEST]   Sending: 10 / 0
+[RESPONSE]   Error: Division by zero
+
+[TEST]   Sending: abc + 5
+[RESPONSE]   Error: Invalid input
+
+[TEST]   Sending: 5 - - 2
+[RESPONSE]   Error: Invalid input
+
+[TEST]   Sending: CLOSE
+[RESPONSE]   CLOSE
+[INFO]   Connection closed
